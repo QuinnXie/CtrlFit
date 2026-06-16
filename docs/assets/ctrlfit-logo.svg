@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="267" height="58" viewBox="142 42 267 58" role="img" aria-labelledby="title desc">
+  <title id="title">ctrlfit logo</title>
+  <desc id="desc">A transparent CtrlFit wordmark with a deep-to-light blue gradient.</desc>
+  <defs>
+    <linearGradient id="textGradient" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#0f3f6e"/>
+      <stop offset="0.52" stop-color="#1f77b4"/>
+      <stop offset="1" stop-color="#8fd0f2"/>
+    </linearGradient>
+  </defs>
+
+  <text x="275" y="99" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="78" font-weight="800"
+        fill="url(#textGradient)">CtrlFit</text>
+</svg>

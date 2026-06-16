@@ -1,0 +1,8 @@
+# ctrlfit dependencies
+numpy
+jax
+jax-sysid
+joblib
+matplotlib
+jaxopt
+scipy
