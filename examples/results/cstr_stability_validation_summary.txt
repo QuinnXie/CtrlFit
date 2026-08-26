@@ -1,0 +1,62 @@
+CSTR sampled ISpS stability validation summary
+================================================
+Initialization dataset: examples\results\cstr_stability_initialization.pkl
+Initialization hash: 46e4beba91c18a1301cbf1023380914304f77c6e49e516a2aaa42006cc5c9c56
+Partition reported: all generated validation trajectories
+Note: sampled trajectory validation, not a proof over a continuous region.
+
+[m_1]
+validation_file: examples\results\cstr_stability_validation_m_1.pkl
+rollout_file: examples\results\cstr_stability_rollout_m_1.pkl
+configured physical bounds [T_K, C_A] min: [310.0, 0.0]
+configured physical bounds [T_K, C_A] max: [400.0, 8.0]
+observed physical bounds [T_K, C_A] min: [327.18850989576663, 2.4976719261922895]
+observed physical bounds [T_K, C_A] max: [366.556042270012, 7.022004512763522]
+trajectories / states: 150000 / 12150000
+ISpS residual: R_h(k) = sum_{j=1}^h lambda_j [V(xi_{k+j}) - V(xi_k)] + Q(xi_k) + beta_x||x_k-x_eq||_2^2 + beta_z||z_k-z_eq||_2^2 + epsilon
+ISpS condition (h=1): R_h(k) <= 1||d_{k:k+h-1}||_2 + 0||d_{k:k+h-1}||_2^2 + 0.0002
+ISpS a1 / a2 / c: 1 / 0 / 0.0002
+one-step violations: trajectories 0/150000; checks 0/12000000
+one-step largest signed excess: -1.661419900e-05 at validation/source/time=(133003, 133003, 2)
+one-step empirical alpha_1,min for c=0: 2.622147653e+02; positive-R zero-disturbance checks: 0
+1-step violations: trajectories 0/150000; checks 0/12000000
+1-step largest signed excess: -1.661419900e-05 at validation/source/time=(133003, 133003, 2)
+1-step empirical alpha_1,min for c=0: 2.622147653e+02; positive-R zero-disturbance checks: 0
+deadzone: disabled; suppressed points: 0
+
+
+[m_2]
+validation_file: examples\results\cstr_stability_validation_m_2.pkl
+rollout_file: examples\results\cstr_stability_rollout_m_2.pkl
+configured physical bounds [T_K, C_A] min: [310.0, 0.0]
+configured physical bounds [T_K, C_A] max: [400.0, 8.0]
+observed physical bounds [T_K, C_A] min: [327.18850989576663, 2.4976719261922895]
+observed physical bounds [T_K, C_A] max: [366.556042270012, 7.022004512763522]
+trajectories / states: 150000 / 12150000
+ISpS residual: R_h(k) = sum_{j=1}^h lambda_j [V(xi_{k+j}) - V(xi_k)] + Q(xi_k) + beta_x||x_k-x_eq||_2^2 + beta_z||z_k-z_eq||_2^2 + epsilon
+ISpS condition (h in {1, 2}): R_h(k) <= 1||d_{k:k+h-1}||_2 + 0||d_{k:k+h-1}||_2^2 + 0
+ISpS a1 / a2 / c: 1 / 0 / 0
+one-step violations: trajectories 1822/150000; checks 1831/12000000
+one-step largest signed excess: 1.357622031e-02 at validation/source/time=(86884, 86884, 1)
+2-step violations: trajectories 0/150000; checks 0/11850000
+2-step largest signed excess: -3.325572027e-05 at validation/source/time=(2061, 2061, 11)
+deadzone: disabled; suppressed points: 0
+
+[m_3]
+validation_file: examples\results\cstr_stability_validation_m_3.pkl
+rollout_file: examples\results\cstr_stability_rollout_m_3.pkl
+configured physical bounds [T_K, C_A] min: [310.0, 0.0]
+configured physical bounds [T_K, C_A] max: [400.0, 8.0]
+observed physical bounds [T_K, C_A] min: [327.18850989576663, 2.4976719261922895]
+observed physical bounds [T_K, C_A] max: [366.556042270012, 7.022004512763522]
+trajectories / states: 150000 / 12150000
+ISpS residual: R_h(k) = sum_{j=1}^h lambda_j [V(xi_{k+j}) - V(xi_k)] + Q(xi_k) + beta_x||x_k-x_eq||_2^2 + beta_z||z_k-z_eq||_2^2 + epsilon
+ISpS condition (h in {1, 3}): R_h(k) <= 0.816496581||d_{k:k+h-1}||_2 + 0||d_{k:k+h-1}||_2^2 + 0
+ISpS a1 / a2 / c: 0.816496581 / 0 / 0
+one-step violations: trajectories 30676/150000; checks 44392/12000000
+one-step largest signed excess: 8.804277930e-02 at validation/source/time=(86884, 86884, 1)
+3-step violations: trajectories 0/150000; checks 0/11700000
+3-step largest signed excess: -1.051678803e-04 at validation/source/time=(131264, 131264, 20)
+deadzone: disabled; suppressed points: 0
+
+
